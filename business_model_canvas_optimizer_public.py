@@ -80,7 +80,7 @@ else:
             )
         # Create a new record as a DataFrame
         new_record = {
-            'Timestamp': datetime.datetime.now(),
+            'Timestamp': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             'User': access,
             'Value Proposition': value_proposition,
             'Customer Profile': customer_pofile,
